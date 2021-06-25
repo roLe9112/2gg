@@ -2,7 +2,7 @@
 2GG Social Dating App for Videogamers
 
 
-This is a Spring Boot project built for the Java Class at Generation Italy.
+This is a Spring Boot project built for the Java Class (JAMI31) at Generation Italy.
 
 Database is missing ATM.
 
