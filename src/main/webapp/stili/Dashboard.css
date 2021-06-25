@@ -1,0 +1,468 @@
+body{
+	margin:0;
+	height:100%;
+		   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+
+/*   BARRA DI NAVIGAZIONE */
+.nav{
+	width:100%;
+	display:flex;
+	height:56px;
+	background-color: #1A1A1A;
+	border-radius:0;
+	position:sticky;
+	top:0;	
+	z-index: 1;
+}
+
+.logo-wrapper{
+	display:flex;
+	align-items:center;
+	padding:8px;
+	position:relative;
+	top:0;
+	left:0;
+	bottom:0;
+}
+
+.nav-inner{
+	flex:1;
+	display:flex;
+	justify-content:center;
+}
+
+.nav-items{
+	display:flex;
+	list-style:none;
+	margin:0;
+	align-items:center;
+	padding:5px;
+}
+
+.nav-item{
+	display:flex;
+}
+
+.logout{
+	padding-top:5px;
+}
+
+.nav-items li:not(:last-child){
+	margin-right:16px;
+}
+
+/* Ridimensionamento immagini barra navigazione */
+/* Dimensione originale: 243x48 */
+#logo-nav
+{
+	height: 36px;
+	width: auto;
+}
+
+#account
+{
+	max-width:60px;
+	max-height:13px;
+}
+
+/* Originale: 186x49 */
+#match
+{
+	max-width:60px;
+	max-height:13px;
+}
+
+#chat
+{
+	max-width:60px;
+	max-height:13px;
+}
+#logout
+{
+	max-width:62px;
+	max-height:15px;
+}
+
+#principale
+{
+	max-width:70px;
+}
+
+#login
+{
+	max-width:40px;
+}
+
+#registrazione
+{
+	max-width:105px;
+}
+
+/* FINE BARRA DI NAVIGAZIONE */
+
+/*  PAGINA */
+.page-content {
+  display: flex;
+  padding-top: 10px;
+  flex:1;
+  align-items:stretch;
+}
+
+
+/* PAGINA SEZIONE FISSA */
+.fixed-sidebar {
+  display: flex;
+  flex-direction: column;
+  /* Larghezza colonna sezione Fissa*/
+  flex: 0 0 35%;
+  margin-left: 40px;
+
+   top:0;
+   bottom:0;
+   left:0; 
+  
+  
+}
+
+#schedaprofilo{
+	display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.fixed-sidebar-content {
+  top: 56px;
+  position:sticky;
+}
+
+
+.soprafoto{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	margin-left: 5px;
+	gap:5px;
+}
+
+
+#diamante
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#stella
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#uomo
+{
+	display: block;
+	max-width:36px;
+	max-height:36px;
+}
+#donna
+{
+	display: block;
+	max-width:36px;
+	max-height:36px;
+}
+
+#sessodonna
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#sessouomo
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#sessoneutro
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+
+
+.foto
+{
+	display:flex;
+	align-items:flex-start;
+	margin-left: 48px;
+	margin-top:12px;
+	gap:5px;
+	
+}
+
+
+#fotoprofilo
+{
+	border-radius:50%;
+}
+
+#fotoprofilo-mini
+{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+.cerco-amore{
+	display:flex;
+	align-items:center;
+}
+
+#cuore
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#joystick
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#bisex
+{
+	display: block;
+	max-width:50px;
+	max-height:50px;
+}
+
+#genderless
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+.sottofoto
+{
+		display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	margin-left:5px;	
+	margin-top:24px;
+		gap:10px;
+}
+
+.sezione-immagini img{
+    margin-bottom:9px;
+}
+
+#gamer
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#bio
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#telefono
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#citta
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#provincia
+{
+	display: block;
+	max-width:32px;
+	max-height:32px;
+}
+
+#modificaprofilo
+{
+	width: 200px;
+}
+
+.sceltamatch{
+	display:flex;
+}
+.scelta{
+	display:flex;
+	gap:100px;
+}
+#accetta
+{
+	display: block;
+	max-width:60px;
+	max-height:60px;
+}
+
+#rifiuta
+{
+	display: block;
+	max-width:60px;
+	max-height:60px;
+}
+
+
+
+/* FINE PAGINA SEZIONE FISSA /*
+
+
+/* PAGINA -> SEZIONE NON FISSA */
+
+
+#AoE
+{
+  	height: 305px;
+	width: auto;
+	border-radius: 8px;
+}
+
+#imminters
+{
+  	height: 155px;
+	width: auto;
+	border-radius: 8px;
+}
+
+.int-preferiti
+{
+	max-width: 155px;
+}
+
+
+.nofixed-sidebar{
+	display:flex;
+	flex-direction:column;
+	min-width:0;
+	max-width:30;
+}
+.nofixed-sidebar-content{
+	
+	
+}
+
+.lista-adesso{
+	display:flex;
+	flex-wrap:wrap;
+	gap:16px;
+	margin-left:10px;
+}
+
+.giochi-adesso{
+	flex-direction:column;
+}
+
+.lista-preferiti{
+	display:flex;
+	flex-wrap:wrap;
+	gap:16px;
+	margin-left:10px;
+}
+
+.giochi-preferiti{
+	flex-direction:column;
+}
+
+.giochi-preferiti p
+{
+	max-width: 250px;
+}
+
+.AClass{
+    left:7px;
+    position: absolute;
+    color: red;
+}
+
+.AClass:hover{color:red;}
+
+.BClass{
+    left:7px;
+    position: absolute;
+    color: red;
+}
+
+.BClass:hover{color:red;}
+
+#nondisponibile
+{
+	height: 305px;
+	width: auto;
+	border-radius: 8px;
+}
+
+#spada{
+	width:50px;
+}
+
+
+
+/* FINE PAGINA SEZIONE NON FISSA */
+
+/* no match */
+#testo{
+    text-align:center;
+}
+
+#immagine-errore{
+	max-width: 600px;
+    display:block;
+    margin:0 auto;
+
+}
+
+#immagine-blocca{
+	max-width: 400px;
+    display:block;
+    margin:0 auto;
+
+}
+
+/* footer */
+.footer{
+	display:flex;
+	background-color:#1A1A1A;
+    margin-top:10px;
+    height:40px;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    bottom: 0; left: 0; right: 0;
+
+}
+
+.testofooter{
+	color:white;  
+}
+

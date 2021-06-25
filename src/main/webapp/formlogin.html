@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2GG - Login</title>
+		<script src="js/jquery.min.js"></script>
+		<!-- <script src="js/Dashboard.js"></script> -->
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="stili/bootstrap.min.css">
+		<link rel="stylesheet" href="stili/Dashboard.css">
+		<script>
+			$(function() {
+				$("#included-navbar").load("/menuOut.html");
+				$("#footer").load("../common/footer.html");
+			});
+		</script>
+	</head>
+	
+	<body>
+	
+	
+		<div id="included-navbar"></div>
+				
+		<!-- CONTENUTO PAGINA -->
+	
+		<div class="page-content">
+			
+				<!-- SEZIONE FISSA-->
+				<div class="fixed-sidebar" id="fixed" >
+					
+					<div class="fixed-sidebar-content" id="profilo">
+						<h3>Entra, ti stiamo aspettando!</h3>
+					</div>	<!-- Fine fixed-sidebar-content -->	
+				</div> <!-- Fine fixed-sidebar -->
+				
+				<!-- SEZIONE NON FISSA -->
+				<div class="nofixed-sidebar" id="nofixed">
+					<div class="nofixed-sidebar-content">
+						
+						<form action="/login" method="post">
+							  <div class="form-group">
+								    <label for="Email">Email</label>
+								    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="La tua email">
+								    <small id="emailHelp" class="form-text text-muted">Non condivideremo mai la tua email con nessuno.</small>
+							  </div>
+							  <div class="form-group">
+								    <label for="InputPassword">Password</label>
+								    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="La tua password">
+							  </div>
+							  
+							  
+							  <button type="submit" class="btn btn-success">Entra</button>
+							  
+							  <br><br>
+								   <small id="suggerimento" class="form-text text-muted">
+								   		Non sei iscritto? Beh, <a href="formregistrazione">registrati!</a>
+								   </small>
+							  
+						</form>
+						
+
+							
+					</div> <!-- Fine nofixed-sidebar-content -->	
+				</div> <!-- Fine nofixed-sidebar -->
+			
+			
+		</div> <!-- Fine Pagina -->	
+		<div id="footer"></div>	
+	</body>
+</html>

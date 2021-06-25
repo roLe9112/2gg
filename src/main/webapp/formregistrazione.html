@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>2GG - Registrazione</title>
+		<script src="js/jquery.min.js"></script>
+		<!-- <script src="js/Dashboard.js"></script> -->
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="stili/bootstrap.min.css">
+		<link rel="stylesheet" href="stili/Dashboard.css">
+		<script>
+			$(function(){
+				$("#included-navbar").load("/menuOut.html");
+				$("#footer").load("../common/footer.html");
+			});
+			
+		</script>
+	</head>
+	<body>
+
+		<div id="included-navbar"></div>
+	
+		<!-- CONTENUTO PAGINA -->
+	
+		<div class="page-content">
+	
+			<!-- SEZIONE FISSA-->
+			<div class="fixed-sidebar" id="fixed">
+	
+				<div class="fixed-sidebar-content" style="position:absolute; margin-top: 10px;" id="profilo">
+					<!-- Qui deve apparire la scheda profilo -->
+					<h1>REGISTRATI ORA!</h1>
+				</div>
+				<!-- Fine fixed-sidebar-content -->
+			</div>
+			<!-- Fine fixed-sidebar -->
+	
+			<!-- SEZIONE NON FISSA -->
+			<div class="nofixed-sidebar" id="nofixed">
+				<div class="nofixed-sidebar-content">
+					<h1>Registrazione nuovo utente</h1>
+	
+
+					<form action="nuovoutente" method="post">
+						
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="tuaEmail">La tua email</label> 
+								<input type="email"	class="form-control" name="email" id="inputEmail4" placeholder="Email">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="tuaPassword">Scegli una password</label> 
+								<input type="password" class="form-control" id="inputPassword4"
+									name="password" placeholder="Password">
+							</div>
+						</div> <!-- FINE RIGA 1 -->
+						
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="selectDomSic">Domanda di sicurezza</label> 
+								<select class="form-control" id="domandaSicurezza" name="iddomanda">
+									<option value="1">Qual'è il tuo gruppo musicale
+										preferito?</option>
+									<option value="2">Che cosa ti spaventa?</option>
+									<option value="3">Dove andresti in vacanza?</option>
+									<option value="4">Quale sarebbe il lavoro dei tuoi
+										sogni?</option>
+									<option value="5">Se potessi intervistare qualcuno, chi
+										sarebbe?</option>
+									<option value="6">Qual'è il tuo libro preferito?</option>
+									<option value="7">Con quale personaggio storico
+										vorresti cenare?</option>
+									<option value="8">Quale super potere vorresti avere?</option>
+									<option value="9">Qual'è la tua serie tv preferita?</option>
+									<option value="10">Cosa vorresti mangiare alla tua
+										ultima cena?</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="rispDomSic">Risposta</label> <input
+									type="text" class="form-control" id="inputRisp"
+									name="risposta" placeholder="La tua risposta">
+							</div>
+						</div> <!-- FINE RIGA 2 -->
+						
+						
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="nickname">Scegli un nickname</label> <input type="text"
+									class="form-control" name="nick" id="inputNick" placeholder="(Puoi anche cambiarlo in seguito)" aria-describedby="nickHelp">
+									<!-- <small id="nickHelp" class="form-text text-muted">Puoi anche cambiarlo in seguito</small> -->
+							</div>
+							<div class="form-group col-md-6">
+								<label for="selectSesso">Sesso</label> 
+								<select class="form-control" id="sesso" name="idsesso">
+									<option value="1">Uomo</option>
+								<option value="2">Donna</option>
+								<option value="3">Altro</option>
+								<option value="4">Non specifico</option>
+								</select>
+							</div>
+						</div> <!-- FINE RIGA 3 -->
+						
+						
+						<div class="form-row"> 
+							
+							<div class="form-group col-md-6"> 
+								<div class="form-date">
+									<label for="dob">Data di nascita</label>
+									<input type="date" class="form-control" name="dob" style="vertical-align: middle;">
+									<small id="dobSpec" class="form-text text-muted">Devi avere almeno 18 anni per iscriverti</small>
+								</div>
+							</div>
+						
+							<div class="form-group col-md-6">
+								<table></table> <!-- SPAZIO VUOTO -->
+							</div> 
+						
+						</div> <!-- FINE RIGA 4 -->
+						
+						
+							
+
+						
+	
+						<br><br>
+						
+							<button type="submit" class="btn btn-info">Iscriviti</button>
+	
+					</form>
+
+			</div>
+				<!-- Fine nofixed-sidebar-content -->
+			</div>
+			<!-- Fine nofixed-sidebar -->
+	
+	
+		</div>
+		<!-- Fine Pagina -->
+		
+		<div id="footer"></div>
+
+	</body>
+</html>
